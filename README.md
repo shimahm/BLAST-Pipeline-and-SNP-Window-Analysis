@@ -132,6 +132,24 @@ message("Search completed. Results saved to: ", out_file)
 
 ---
 
+## How to Run the R Code
+
+To search for genes near a SNP, use the following command in your terminal, replacing `<chromosome>` and `<position>` with your SNP information:
+
+```sh
+Rscript find_genes_near_snp.R <chromosome> <position>
+```
+
+**Example:**
+
+```sh
+Rscript find_genes_near_snp.R CM081010.1 19070000
+```
+
+This will produce a results file named `result_<chromosome>_<position>.txt` (e.g., `result_CM081010.1_19070000.txt`) listing all genes within ±1 Mbp of the SNP position.
+
+---
+
 ## Notes
 
 - Update all paths as necessary for your current environment.
